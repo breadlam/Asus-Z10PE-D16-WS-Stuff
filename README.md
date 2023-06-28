@@ -1,5 +1,6 @@
 # Modifying an Asus Z10PE-D16 WS BIOS image
-Here are a couple BIOS modification scripts and some instructions for Asus Z10PE D16 WS motherboards.  
+Here are a couple scripts for extracting and re-encapsulating BIOS images for a Asus Z10PE D16 WS motherboard.  
+
 I created this repo as a backup for my posts to an [overclock.net forum](https://www.overclock.net/threads/asus-z10pe-d16-ws-owners-thread.1579548/page-28)
 
 ## PCIe Bifurcation

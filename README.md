@@ -53,7 +53,15 @@ https://www.overclock.net/threads/asus-z10pe-d16-ws-owners-thread.1579548/post-2
     * Example: `python3 capify.py mod-bios.bin Z1016WS.CAP`
 * Flash Z1016WS.CAP to your board.
 
-### Additional Links
-* IIO / IOU to physical slot mappings for Z10PE-D16 WS in AMIBCP: https://www.overclock.net/threads/asus-z10pe-d16-ws-owners-thread.1579548/post-28516664  
+### Additional Info
+* IIO / IOU to physical slot mappings for Z10PE-D16 WS in AMIBCP: https://www.overclock.net/threads/asus-z10pe-d16-ws-owners-thread.1579548/post-28516664
+   * ```
+     Slot #1: IIO 1 / IOU2
+     Slot #2: IIO 0 / IOU0
+     Slot #3: IIO 0 / IOU2
+     Slot #4: IIO 0 / IOU1
+     Slot #5: IIO 1 / IOU0
+     Slot #6: IIO 1 / IOU1
+     ```
 * Instructions for enabling/disabling bifurcation support **via BIOS boot menu**, using AMIBCP: https://www.overclock.net/threads/asus-z10pe-d16-ws-owners-thread.1579548/post-29202198
-    * I haven't incorporated this into my own BIOS image yet, but it's definitely an improvement over what I did (which was just to put slot 5 into x4/x4/x4/x4 mode permanently)
+    * I haven't incorporated this into my own BIOS image yet, but it's a huge improvement over what I did (which was just to put slot 5 into x4/x4/x4/x4 mode permanently)

@@ -49,19 +49,18 @@ https://www.overclock.net/threads/asus-z10pe-d16-ws-owners-thread.1579548/post-2
     * Example: `python3 decapify.py Z10PE-D16-WS-ASUS-4101.CAP bios.bin`
 * Use AMIBCP (or whatever) to edit `bios.bin` to add in support for bifurcation. Save to a filename such as `mod-bios.bin`.
     * [Here's my description of how the PCIe slots are mapped.](https://www.overclock.net/threads/asus-z10pe-d16-ws-owners-thread.1579548/post-28516664)
+    * ```
+      Slot #1: IIO 1 / IOU2
+      Slot #2: IIO 0 / IOU0
+      Slot #3: IIO 0 / IOU2
+      Slot #4: IIO 0 / IOU1
+      Slot #5: IIO 1 / IOU0
+      Slot #6: IIO 1 / IOU1
+      ```
 * Use `capify.py` to construct a new CAP file. It uses the CAP header from the original 4101 CAP file, making it possible to use USB Flashback.
     * Example: `python3 capify.py mod-bios.bin Z1016WS.CAP`
 * Flash Z1016WS.CAP to your board.
 
 ### Additional Info
-* IIO / IOU to physical slot mappings for Z10PE-D16 WS in AMIBCP: https://www.overclock.net/threads/asus-z10pe-d16-ws-owners-thread.1579548/post-28516664
-   * ```
-     Slot #1: IIO 1 / IOU2
-     Slot #2: IIO 0 / IOU0
-     Slot #3: IIO 0 / IOU2
-     Slot #4: IIO 0 / IOU1
-     Slot #5: IIO 1 / IOU0
-     Slot #6: IIO 1 / IOU1
-     ```
 * Instructions for enabling/disabling bifurcation support **via BIOS boot menu**, using AMIBCP: https://www.overclock.net/threads/asus-z10pe-d16-ws-owners-thread.1579548/post-29202198
     * I haven't incorporated this into my own BIOS image yet, but it's a huge improvement over what I did (which was just to put slot 5 into x4/x4/x4/x4 mode permanently)

@@ -14,9 +14,9 @@ Using an M.2 PCIe card with more than one M.2 slot requires PCIe bifurcation. Ty
 
 ### Solution
 
-The latest BIOS image from Asus (August 2019) can be modified to support PCIe bifurcation.
+The latest Z10PE-D16 WS BIOS image from Asus (August 2019) can be modified to support PCIe bifurcation.
 
-The last Asus-supported BIOS image for Z10PE-D16 WS motherboards can be found here (version 4101):  
+It can be found here (version 4101):  
 https://dlcdnets.asus.com/pub/ASUS/mb/Socket2011-R3/Z10PE-D16_WS/BIOS/Z10PE-D16-WS-ASUS-4101.zip?model=z10pe-d16%20ws
 
 The 4101 BIOS image is embedded inside a capsule file (.CAP), which is just a 2048 byte header prepended to a BIOS image.  

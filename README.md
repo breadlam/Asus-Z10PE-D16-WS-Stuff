@@ -7,7 +7,7 @@ I created this repo as a backup for my posts to an [overclock.net forum](https:/
 ### Premise
 I wanted my Z10PE-D16 WS motherboard to support an Asus Hyper M.2 x16 V2 card. I had multiple NVMe drives and needed to free up more PCIe slots for other devices.  
 
-By default, Z10PE-D16 WS BIOS files from Asus don't support PCIe bifurcation, for modes beyond a single x16, x8, or x4 lane per card slot.
+By default, Z10PE-D16 WS BIOS images from Asus don't support PCIe bifurcation, for modes beyond a single x16, x8, or x4 lane per card slot.
 The Z10PE-D16 WS also doesn't have onboard M.2 slots for NVMe drives, so it's common to use M.2 PCIe cards instead.  
 
 Using an M.2 PCIe card with more than one M.2 slot requires PCIe bifurcation. Typically, each M.2 slot uses one x4 PCIe lane. This means that an x16 PCIe slot could support up to four M.2 devices, if the x16 slot were bifurcated into x4/x4/x4/x4 lanes.  

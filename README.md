@@ -34,10 +34,11 @@ Which is laid out like this, as far as byte offsets:
 ```
 
 I wrote some simple scripts in Python to extract a BIOS image from a CAP file (`decapify.py`) and reconstruct a CAP file from a BIOS image (`capify.py`).  
-The tools takes advantage of the fact that the Z10PE-D16 WS firmware **doesn't verify the CAP file header signature against the attached BIOS image**.  
+
+The tools take advantage of the fact that the Z10PE-D16 WS firmware **doesn't verify the CAP file header signature against the attached BIOS image**.  
 As a result, the original CAP header can be used with a modified BIOS image.  
 
-The `capify.py` tool contains the original CAP file header bytes for BIOS version 4101, which it prepends to any given BIOS file. The resulting capsule file passes the motherboard's file check, allowing a custom BIOS to be written to the board using USB Flashback (or from boot config menu).  
+As a result, `capify.py` contains the original CAP file header bytes for BIOS version 4101, which it simply prepends to any given BIOS file. The resulting capsule file passes the motherboard's file check, allowing a custom BIOS to be written to the board using USB Flashback (or from boot config menu).  
 
 The extracted BIOS file can be edited manually, or by using some kind of standard tool such as AMIBCP.  
 
